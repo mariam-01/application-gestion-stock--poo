@@ -14,29 +14,14 @@ public class Main {
             scanner.nextLine();
 
             switch (choix) {
-                case 1:
-                    ajouterUnProduit(scanner);
-                    break;
-                case 2:
-                    modifierUnProduit(scanner);
-                    break;
-                case 3:
-                    supprimerUnProduit(scanner);
-                    break;
-                case 4:
-                    afficherProduits();
-                    break;
-                case 5:
-                    rechercherUnProduit(scanner);
-                    break;
-                case 6:
-                    calculerValeurStock();
-                    break;
-                case 0:
-                    System.out.println("Au revoir !");
-                    break;
-                default:
-                    System.out.println("Choix invalide.");
+                case 1 -> ajouterUnProduit(scanner);
+                case 2 -> modifierUnProduit(scanner);
+                case 3 -> supprimerUnProduit(scanner);
+                case 4 -> afficherProduits();
+                case 5 -> rechercherUnProduit(scanner);
+                case 6 -> calculerValeurStock();
+                case 0 -> System.out.println("Au revoir !");
+                default -> System.out.println("Choix invalide.");
             }
         } while (choix != 0);
 
